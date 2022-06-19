@@ -2,7 +2,7 @@
 #include "linux_parser.h"
 
 // Return the aggregate CPU utilization
-Processor::Processor() : prev_cpu_util(10, ""), curr_cpu_util(10, "") {  
+Processor::Processor() : prev_cpu_util(10, "0"), curr_cpu_util(10, "0") {  
 }
 
 float Processor::Utilization() {
