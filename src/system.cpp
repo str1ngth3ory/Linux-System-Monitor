@@ -18,10 +18,10 @@ using std::vector;
 You need to properly format the uptime. Refer to the comments mentioned in format. cpp for formatting the uptime.*/
 
 System::System() {
-  Processor cpu;
-  cpu_ = &cpu;
-  kernel_ = LinuxParser::Kernel();
-  os_system_ = LinuxParser::OperatingSystem();
+  // Processor cpu;
+  // cpu_ = &cpu;
+  // kernel_ = LinuxParser::Kernel();
+  // os_system_ = LinuxParser::OperatingSystem();
 }
 
 // Return the system's CPU
