@@ -24,5 +24,5 @@ float Processor::Utilization() {
                    + std::stol(prev_cpu_util[LinuxParser::CPUStates::kIRQ_])
                    + std::stol(prev_cpu_util[LinuxParser::CPUStates::kSoftIRQ_])
                    + std::stol(prev_cpu_util[LinuxParser::CPUStates::kSteal_]);
-  return (active - prev_active) / (active + idle - prev_active - prev_idle);
+  return static_cast<float>(active - prev_active) / (active + idle - prev_active - prev_idle);
 }

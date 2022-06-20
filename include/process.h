@@ -20,8 +20,6 @@ class Process {
   bool operator<(Process const& a) const;  
 
  private:
-  std::vector<std::string> prev_cpu_util;
-  std::vector<std::string> curr_cpu_util;
   int pid_;
   std::string user_, command_;
   float cpu_utilization_;
