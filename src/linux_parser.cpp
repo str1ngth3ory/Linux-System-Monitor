@@ -250,7 +250,7 @@ string LinuxParser::Ram(int pid) {
     while (std::getline(stream, line)) {
       std::istringstream linestream(line);
       linestream >> key;
-      if (key == "VmSize:") {
+      if (key == "VmRSS:") {
         linestream >> value;
         value = std::to_string(std::stoi(value) / 1024);
         break;
